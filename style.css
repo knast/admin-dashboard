@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&family=Kanit:wght@200&family=Manrope&family=Roboto:wght@300&family=Syncopate:wght@700&family=Unbounded:wght@600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Chakra+Petch:wght@500&family=Kanit:wght@200&family=Manrope&family=Roboto:wght@300&family=Syncopate:wght@700&family=Unbounded:wght@600&display=swap');
 
 * {
     margin:0;
@@ -76,6 +75,9 @@ h1 {
 .admin-panel {
     display:grid;
     grid-template-rows:repeat(2, 1fr);
+    gap:40px;
+    border-bottom: 2px solid black;
+    padding-bottom:10px;
 }
 
 input {
@@ -122,7 +124,23 @@ input#searching-bar {
     gap:30%;
 }
 
-.avatar {
-    width:64px;
-    height:64px;
+.admin-nav {
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:80px;
+}
+
+.admin-nav button {
+    background-color:white;
+    font-size:25px;
+    font-weight:bold;
+    font-family:'Abel', sans-serif;
+    border:none;
+}
+
+.admin-nav button:hover {
+    border-radius:12px;
+    background-color:rgb(157, 223, 223);
+    transform:0.75s;
+    border:2px solid rgb(245, 226, 118)
 }

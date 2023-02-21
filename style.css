@@ -144,3 +144,10 @@ input#searching-bar {
     transform:0.75s;
     border:2px solid rgb(245, 226, 118)
 }
+
+.projects-wrapper {
+    display:grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
+    gap:20px;
+}
